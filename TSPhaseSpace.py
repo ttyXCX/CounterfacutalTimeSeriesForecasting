@@ -4,18 +4,18 @@ from tsfresh.feature_extraction import feature_calculators as tsfc
 
 class PhaseSpaceLearner:
     def __init__(self, output=False):
-        self.functions = [tsfc.abs_energy, tsfc.absolute_sum_of_changes,
-                          tsfc.benford_correlation, tsfc.count_above_mean,
-                          tsfc.count_below_mean, tsfc.first_location_of_maximum,
-                          tsfc.first_location_of_minimum, tsfc.kurtosis,
-                          tsfc.last_location_of_maximum, tsfc.last_location_of_minimum,
-                          tsfc.longest_strike_above_mean, tsfc.longest_strike_below_mean,
-                          tsfc.maximum, tsfc.mean,
-                          tsfc.mean_abs_change, tsfc.mean_change,
+        self.functions = [tsfc.abs_energy,                     tsfc.absolute_sum_of_changes,
+                          tsfc.benford_correlation,            tsfc.count_above_mean,
+                          tsfc.count_below_mean,               tsfc.first_location_of_maximum,
+                          tsfc.first_location_of_minimum,      tsfc.kurtosis,
+                          tsfc.last_location_of_maximum,       tsfc.last_location_of_minimum,
+                          tsfc.longest_strike_above_mean,      tsfc.longest_strike_below_mean,
+                          tsfc.maximum,                        tsfc.mean,
+                          tsfc.mean_abs_change,                tsfc.mean_change,
                           tsfc.mean_second_derivative_central, tsfc.median,
-                          tsfc.minimum, tsfc.root_mean_square,
-                          tsfc.skewness, tsfc.standard_deviation,
-                          tsfc.variance, tsfc.variation_coefficient]
+                          tsfc.minimum,                        tsfc.root_mean_square,
+                          tsfc.skewness,                       tsfc.standard_deviation,
+                          tsfc.variance,                       tsfc.variation_coefficient]
         self.output = output
 
     def learn_phase_space(self, series):

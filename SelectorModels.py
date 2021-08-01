@@ -2,9 +2,9 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-class LogisticRegressionModel(nn.Module):
+class LogisticRegression(nn.Module):
     def __init__(self, input_length, output_length):
-        super(LogisticRegressionModel, self).__init__()
+        super(LogisticRegression, self).__init__()
         self.linear = torch.nn.Linear(input_length, output_length)
         self.sigmoid = torch.nn.Sigmoid()
 

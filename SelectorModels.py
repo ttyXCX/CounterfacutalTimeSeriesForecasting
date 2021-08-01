@@ -12,3 +12,5 @@ class LogisticRegression(nn.Module):
         x = self.linear(x)
         y_hat = self.sigmoid(x)
         return y_hat
+    
+# TODO
